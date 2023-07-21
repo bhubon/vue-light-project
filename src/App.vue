@@ -22,15 +22,15 @@ const lightThree = ref(true);
       <div class="p-10 border w-96 flex flex-col space-y-5">
         <button @click="lightOne = !lightOne" class="text-white font-bold py-2 px-4 rounded"
           :class="lightOne ? 'bg-blue-500 hover:bg-blue-700' : 'bg-gray-500 hover:bg-gray-700'">
-          Light 1 On
+          Light 1 {{ lightOne ? 'On' : 'Off' }}
         </button>
         <button @click="lightTwo = !lightTwo" class="text-white font-bold py-2 px-4 rounded"
           :class="lightTwo ? 'bg-blue-500 hover:bg-blue-700' : 'bg-gray-500 hover:bg-gray-700'">
-          Light 2 On
+          Light 2 {{ lightTwo ? 'On' : 'Off' }}
         </button>
         <button @click="lightThree = !lightThree" class="text-white font-bold py-2 px-4 rounded"
           :class="lightThree ? 'bg-blue-500 hover:bg-blue-700' : 'bg-gray-500 hover:bg-gray-700'">
-          Light 3 Off
+          Light 3 {{ lightThree ? 'On' : 'Off' }}
         </button>
       </div>
       <div class="p-10 border w-96 flex flex-col space-y-5">
